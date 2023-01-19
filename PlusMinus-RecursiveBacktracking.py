@@ -16,7 +16,7 @@ def plusMinus(num):
             else:
                 return 'not possible'
         
-        
+        #if we have more than one solution, where this is placed decides whether we return - results first 
         s2 = plusMinusRec(arr[1:], total - arr[0])
         if s2 != 'not possible':
             return '-' + s2
